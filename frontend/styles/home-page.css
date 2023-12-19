@@ -12,6 +12,9 @@
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    display: flex;
+    flex-direction:column;
+    justify-self: center;
 }
 
 img, picture, video, canvas, svg {
@@ -76,7 +79,7 @@ nav img {
 /* Cards style */
 
 main {
-    width: 40em;
+    width: 40rem;
     margin: 0 auto;
 }
 
@@ -110,5 +113,48 @@ main {
     padding-bottom: 2em;
 }
 
+/* Responsive design */
 
+@media(max-width: 1300px){
+    
+    li {
+        flex-shrink: 0;
+    }
+
+    nav ul {
+        width: 1300px;
+        padding: 0 30em;
+    }
+
+}
+
+@media(max-width: 1200px){
+
+    nav ul {
+        width: 1300px;
+        padding: 0 30em;
+        justify-content: space-evenly;
+    }
+    
+    nav img {
+        height: 7em;
+    }
+
+    button {
+        margin-top: 1em;
+        font-size: 1.5em;
+    }
+
+    main div p {
+        font-size: 2em;
+    }
+
+    main div h4 {
+        font-size: 2em;
+    }
+
+    .card div img {
+        height: 25em;
+    }
+}
 
